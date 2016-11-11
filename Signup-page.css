@@ -6,18 +6,30 @@ body {
 }
 
 .logo {
-	margin; 0 auto 30px;
 	height: 35px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 30px;
+	display: block;
 }
 
-.signup-page fieldset {
-	width: 320px;
-	padding-left: 40px;
-	padding-right: 40px;
+* {
+	box-sizing: border-box;
+}
+
+.signup-page {
 	background-color: white;
+	width: 400px;
 	margin-left: auto;
 	margin-right: auto;
 	border: none;
+	padding: 30px 40px;
+}
+
+.signup-page fieldset {
+	background-color: white;
+	border: none;
+	padding: 0;
 }
 
 .signup-page legend {
@@ -29,21 +41,18 @@ body {
 .signup-page input, .signup-page button {
 	display: block;
 	height: 55px;
-	width: 320px;
-	
-	padding: 15px;
+	width: 100%;
 	font-size: 16px;
-	
 }
 
 .signup-page input {
 	border: 2px  solid lightgray;
-	margin-left: auto;
-	margin-right: auto;
 }
+
 .signup-page input::placeholder {
 	color: gray;
 }
+
 .signup-page button {
 	color: white;
 	background-color: lightgreen;
@@ -53,12 +62,17 @@ body {
 	color: black;
 	font-size: 17px;
 	text-align: left;
+	width: 100%;
+	display: inline-block;
+	margin-right: auto;
+	margin-left: auto;
 }
 
 .signup-page a {
 	color: gray;
-	text-align: center;
+	display: block;
 	font-size: 14px;
+	text-align: center;
 	text-decoration: underline;
 }
 
